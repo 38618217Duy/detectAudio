@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Search, Download, Music, Loader2 } from 'lucide-react';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://detectaudio.onrender.com/api';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
